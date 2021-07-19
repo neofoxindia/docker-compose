@@ -9,7 +9,9 @@ services:
     ports:
       - 5984:5984
       - 4369:4369
+      
       - 9100:9100
     volumes:
       - ./data:/opt/couchdb/data
       - ./labs:/app/couchdb/labs
+      - ./local.ini:/opt/couchdb/etc/local.ini
